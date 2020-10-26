@@ -79,17 +79,17 @@ h1 {
 	font-family: 'Architects Daughter', cursive;
 	font-variant: small-caps;
 	font-size: 30px;
-	font-weight: --font-heading-weight;
+	font-weight: var(--font-heading-weight);
 }
 
 h2 {
 	font-size: 24px;
-	font-weight: --font-heading-weight;
+	font-weight: var(--font-heading-weight);
 }
 
 h3 {
 	font-size: 18px;
-	font-weight: --font-heading-weight;
+	font-weight: var(--font-heading-weight);
 }
 
 a {
