@@ -293,6 +293,7 @@ button:focus,
 	50% {
 		fill: #fcbe03;
 	}
+
 	100% {
 		fill: #fcdf03;
 	}
@@ -330,7 +331,8 @@ button:focus,
 	from {
 		transform: translate(80px, 0px);
 	}
-	to {
+
+  to {
 		transform: translate(0px, 0px);
 	}
 }
