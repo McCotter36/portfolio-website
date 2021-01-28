@@ -144,6 +144,8 @@ button:focus,
 }
 
 .social-media__item {
+  width: 40px;
+  margin: 5px;
 	transition-property: opacity;
   transition-duration: 0.4s;
 }
@@ -231,6 +233,11 @@ button:focus,
 
 .about {
   	text-align: center;
+}
+.about-summary {
+  margin-right: auto;
+  margin-left: auto;
+  width:75%;
 }
 
 .about-list__item {
