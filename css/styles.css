@@ -1,5 +1,6 @@
 /* font-family: 'Architects Daughter', cursive;
 font family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -382,4 +383,123 @@ button:focus,
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
+}
+
+/* case studies */
+
+/* Social Eyes App */
+.case-body {
+  margin: 0 10%;
+  font-family: Lato, sans-serif;
+}
+.case-title {
+  font-family: Lato, sans-serif;
+  font-variant: normal;
+}
+@media screen and (min-width: 992px){
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .intro-content {
+    width: 60%;
+    display: block;
+    margin-right: 20px;
+  }
+  .intro-image {
+    width: 40%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .approach-div {
+    display: flex;
+    flex-direction: row;
+  }
+  .approach-image {
+    width: 50%;
+  }
+  .test-image {
+    width: 100%;
+  }
+  .approach-content {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: -20px;
+    text-align: right;
+  }
+  .challenges {
+    display: flex;
+    flex-direction: row;
+  }
+  .challenges-content {
+    width: 60%;
+    margin-right: 20px;
+  }
+  .challenges-image {
+    width: 40%;
+  }
+  .desktop-image {
+    width: 100%;
+    margin: 20px auto 20px auto;
+  }
+  .login-image {
+    width: 100%;
+  }
+  .credit {
+    text-align: center;
+  }
+}
+.social-eyes-style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #47BF83;
+  font-style: normal;
+}
+.image {
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}
+.title {
+  font-weight: 900;
+}
+.social-eyes-logo {
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+.ipad-v-image {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.test-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto 5px auto;
+}
+.test-pass-image {
+  display: block;
+  width: 100%;
+  margin: 5px auto 0 auto;
+}
+@media screen and (max-width: 991px){
+  .challenges-image {
+    width: 100%;
+    margin: 20px auto 20px auto;
+  }
+  .login-image {
+    width: 100%;
+    margin: 20px auto 20px auto;
+  }
+  .desktop-image {
+    width: 100%;
+    margin: 20px auto 20px auto;
+  }
+  .credit {
+    text-align: center;
+  }
 }
