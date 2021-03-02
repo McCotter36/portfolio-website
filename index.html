@@ -4,16 +4,152 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>McCotter</title>
+    <title>Robert McCotter</title>
     <link rel="icon" type="image/png" href="images/favicon32x32.png" sizes="32x32" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
-<body>
-    <header class="page-header">
-    <img src="images/mccotter_logo.svg" alt="Robert's name in old font" class="logo page-header_item">
+  
+    <section class="navbar">
+      <a class="navbar-item" type="img" href="#home">
+        <img class="button" src="./images/icohome.svg">
+      </a>
+      <a class="navbar-item" href="#about">
+        <img class="button" src="./images/icoabout.svg">
+      </a>
+      <a class="navbar-item" href="#projects">
+        <img class="button" src="./images/icoprojects.svg">
+      </a>
+      <a class="navbar-item" type="img" href="#contact">
+        <img class="button" src="./images/icophone.svg">
+      </a>
+    </section>
+  <body class="body">
+    <section id="home">
+      <div class="top-box"></div>
+      <img src="images/robert.jpg" class="profile-image" alt="robert photo, photo of robert looking to the left">
+      <div class="intro-container">
+        <h1>Hello! I am Robert McCotter</h1>
+        <p>I am a Web Developer with a varied background including 
+          Graphic design,  Videography, and Aviation with the Army. 
+          <br>I am currently working through a project with Angular. 
+        </p>
+      </div>
+    </section>
+        <section id="about">
+          <div class="section-label">
+            <img src="images/icoabout.svg" class="section-icon">
+            <h1> About </h1>
+          </div>
+          <div class="about-summary"> As an avid builder, I spent the beginning years 
+            of my career designing and 
+            building graphics and video packages for business marketing. 
+            I joined the Army and spent my time building roads, dams, landing pads, and 
+            aerial reconnaissance maps.  
+            For my post-Army career I’ve returned to marketing through web development. 
+            I enjoy web development because of its unlimited potential to design and build. 
+          <br>
+          <br>I thrive in the collaborative environment that designing and coding require. 
+            It also gives me much more time with my wife and two daughters than the Army life 
+            allowed. I love watching my girls grow and spending time exploring the world with 
+            them. Being a developer is enabling me to be the best father I can be. 
+          <br>
+          <br>I am looking for a position that will enable me to grow in my web development 
+            skills while inspiring those around me. I am seeking a challenging and collaborative 
+            environment that values positive, creative thinking. Are you looking for a dedicated 
+            developer who is able to work independently or as part of a team?
+          </div>
+              <br>
+              <a href="files/resume.pdf" class="bar-button" target="_blank" download>Download my Resume</a>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="section-label">
+            <img src="images/icoprojects.svg" class="section-icon">
+            <h1>Projects</h1>
+          </div>
+          <div class="project--list">
+            <div class="project--list__item">
+              <h2>MyFlix Web App</h2>
+              <p>
+                For this web application I built a movie database which can be viewed by the user. The user, once registered, can save movies from the database to their list of favorites.   
+              </p>
+              <div class="project--list__item-links">
+                <a href="https://github.com/McCotter36/myFlix-client" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
+                <a href="https://mccotter-myflix.netlify.app/" target="_blank"><img class="project-icon button" src="images/icoplay.svg"></a>
+              </div>
+            </div>
+            <div class="project--list__item">
+              <h2>Social Eyes PWA</h2>
+              <p>
+                For this calendar app, I built an interface which accesses Google's Calendar API to list upcoming events. The user can search events by city and adjust the number of events displayed.
+              </p>
+              <div class="project--list__item-links">
+                <a href="./case-studies/social-eyes.html" target="_blank"><img class="project-icon button"src="images/icocasestudy.svg"></a>
+                <a href="https://github.com/McCotter36/social-eyes.git" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
+                <a href="https://mccotter36.github.io/social-eyes" target="_blank"><img class="project-icon button" src="images/icoplay.svg"></a>
+              </div>
+            </div>
+            <div class="project--list__item">
+              <h2>Speak Easy Native App</h2>
+              <p>
+                A messaging app built using React-Native and Expo.
+                The user can log in to the chat room, share text messages, images from their device or camera,
+                As well as share their GPS location. 
+              </p>
+              <div class="project--list__item-links"></div>          
+                <a href="#"><img class="project-icon button button" src="images/icogithub.svg"></a>
+              </div>
+            </div>
+            <!-- <div class="project--list__item">
+              <h2>Styleguide</h2>
+              <p>
+                Again, not yet created but time will tell.
+              </p>
+              <a href="#">See styleguide</a>
+            </div> -->
+            <!-- <div class="project--list__item">
+              <h2>Medium Blog</h2>
+              <p>
+                I wrote a blog once a long time ago.
+                It may be time to start again... this process is very interesting.
+              </p>
+              <a href="#">Read my latest blogpost</a>
+            </div> -->
+            <!-- <div class="project--list__item">
+              <h2>Your Project?</h2>
+              <p>
+                Are you looking for a dedicated developer who is able to work independently or as part of a team?
+                <br>Perhaps a designer with understanding in development principles and web based languages?
+                <br>Maybe you need a bit of both.
+              </p>
+              <a href="contact.html">Contact me</a> -->
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="contact">
+            <div class="section-label">
+              <img src="images/icophone.svg" class="section-icon">
+              <h1> Contact </h1>
+            </div>  
+              <form action="" method="post" class="contact-form">
+                <input class="contact-input" type ="email" placeholder="Email" id="contact-email" required>
+          
+                <input class="contact-input" placeholder="Phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+          
+                <textarea class="contact-input" placeholder="Message" maxlength="240" required id="contact-message"></textarea>
+          
+                <input type="submit" class="bar-button" value="Send Message">
+              </form>
+          
+                Tel <a href="tel:+19708173753"> +1(970)817-3753</a><br>
+               Email <a href="mailto:robert.mccotter@gmail.com">robert.mccotter@gmail.com</a><br>
+               <a href="mailto:robert.mccotter@gmail.com">Contact me</a>
+        </section>
+    <!-- <img src="images/mccotter_logo.svg" alt="Robert's signature" class="logo page-header_item">
       <nav class="main-navigation page-header_item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -27,28 +163,21 @@
           <a href="work.html" role="menuitem" class="navigation-list__item">Work
           </a></li>
       </ul>
-    </nav>
-  </header>
+    </nav> -->
 
-	<div class="profile">
-		<img  src="images/robert.jpg" class="profile_robert" alt="robert photo, photo of robert looking to the left">
-		<div>
-			<h1>Hello World ! </h1>
-		   	<p> My name is Robert McCotter.<br>
-		   	I am a <span>web</span> developer from Brighton, Colorado.</p>
-
-			<a href="https://repl.it/@McCotter" target="_blank">Check out some of my code</a>
-		</div>
-	</div>
 
 	<footer class="page-footer">
 		<p>Find me on</p>
 		<div class="social-media">
-			<a href="https://github.com/McCotter36" target="_blank"><img src="images/github.svg" alt="github logo, link to personal github site" class="social-media__item"></a>
-
-			<a href="https://www.linkedin.com/in/robert-mccotter-132ab975/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo, link to personal linkedin site" class="social-media__item"></a>
-    
-      <a href="https://www.facebook.com/Studio-5-Media-253311104743328/?view_public_for=253311104743328" target="_blank"><img src="images/facebook.svg" alt="facebook logo, link to facebook studio5 site" class="social-media__item"></a>
+			<a href="https://github.com/McCotter36" target="_blank">
+        <img class="social-icon button" src="images/icogithub.svg" alt="github logo, link to personal github site" class="social-media__item">
+      </a>
+			<a href="https://www.linkedin.com/in/robert-mccotter-132ab975/" target="_blank">
+        <img class="social-icon button" src="images/icolinkedin.svg" alt="linkedin logo, link to personal linkedin site" class="social-media__item">
+      </a>
+      <a href="https://www.facebook.com/Studio-5-Media-253311104743328/?view_public_for=253311104743328" target="_blank">
+        <img class="social-icon button" src="images/icofacebook.svg" alt="facebook logo, link to facebook studio5 site" class="social-media__item">
+      </a>
     </div>
 	</footer>
 
