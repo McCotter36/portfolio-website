@@ -162,9 +162,9 @@ h1{
 	display: inline-block;
 	width: 33%;
 }
-.project--list__item-description{
-  padding: 10px;
-  padding-bottom: 20px;
+
+p{
+  padding-bottom: 30px;
 }
 
 @supports (display: grid) {
@@ -189,13 +189,11 @@ h1{
     border-radius: 20px;
 	}
 
-  /* .project--list__item-description{
-    padding-bottom: 20px;
-  } */
-
   .project--list__item-links {
     position: absolute;
     bottom: 0;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
