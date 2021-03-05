@@ -34,6 +34,12 @@ font family: 'Lato', sans-serif; */
   margin: auto;
 }
 
+.navbar-item-label {
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+}
+
 /* Sections */
 .section-label {
   width: 200px;
@@ -138,6 +144,7 @@ h1{
 .button {
   width: 80%;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 .button:hover {
