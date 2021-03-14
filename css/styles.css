@@ -68,9 +68,10 @@
 }
 
 /* Body */
-@media all and (max-width: 450px){
+@media all and (max-width: 500px){
   .body {
     margin-left: 10%;
+    margin-right: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -79,7 +80,7 @@
   }
 }
 
-@media all and (min-width: 450px){
+@media all and (min-width: 500px){
   .body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -101,19 +102,19 @@ h1{
 }
 
 /* Signature Block */
-@media all and (max-width: 450px){
+@media all and (max-width: 500px){
   .top-box {
     background-color: var(--primary-color);
     position: relative;
     z-index: -1;
-    margin-top: -5%;
-    height: 110px;
+    margin-top: -10%;
+    height: 150px;
     width: 100%;
     transform: skewY(-5deg);
   }
 }
 
-@media all and (min-width: 450px) and (max-width: 1000px){
+@media all and (min-width: 500px) and (max-width: 1000px){
   .top-box {
     background-color: var(--primary-color);
     position: relative;
@@ -131,7 +132,7 @@ h1{
     position: relative;
     z-index: -1;
     margin-top: -5%;
-    height: 420px;
+    height: 475px;
     width: 100%;
     transform: skewY(-5deg);
   }
