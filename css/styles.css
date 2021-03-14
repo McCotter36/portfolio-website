@@ -1,5 +1,3 @@
-/* font-family: 'Architects Daughter', cursive;
-font family: 'Lato', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 :root {
@@ -16,11 +14,12 @@ font family: 'Lato', sans-serif; */
 .navbar{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   position: fixed;
   z-index: 1;
   width: 10%;
   height: 110%;
-  margin-top: 1%;
+  margin-top: 2%;
   left: 0;
   background-color: var(--primary-color);
   border: solid;
@@ -47,6 +46,7 @@ font family: 'Lato', sans-serif; */
   text-align: center;
 }
 
+
 /* Sections */
 .section-label {
   width: 200px;
@@ -68,14 +68,26 @@ font family: 'Lato', sans-serif; */
 }
 
 /* Body */
+@media all and (max-width: 450px){
+  .body {
+    margin-left: 10%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+  }
+}
 
-.body {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
+@media all and (min-width: 450px){
+  .body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+  }
 }
 
 h1{
@@ -88,24 +100,48 @@ h1{
   min-height: 500px;
 }
 
-.top-box {
-  background-color: var(--primary-color);
-  position: relative;
-  z-index: -1;
-  margin-top: -5%;
-  height: 300px;
-  width: 100%;
-  transform: skewY(-5deg);
+/* Signature Block */
+@media all and (max-width: 450px){
+  .top-box {
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: -1;
+    margin-top: -5%;
+    height: 110px;
+    width: 100%;
+    transform: skewY(-5deg);
+  }
 }
 
-.profile-image {
+@media all and (min-width: 450px) and (max-width: 1000px){
+  .top-box {
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: -1;
+    margin-top: -5%;
+    height: 250px;
+    width: 100%;
+    transform: skewY(-5deg);
+  }
+}
+
+@media all and (min-width: 1000px){
+  .top-box {
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: -1;
+    margin-top: -5%;
+    height: 420px;
+    width: 100%;
+    transform: skewY(-5deg);
+  }
+}
+
+.signature {
   position: relative;
-  width: 200px;
-  border-radius: 50%;
-  margin-top: -100px;
+  width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: -20% 15%;
 }
 
 .intro-container {
@@ -114,13 +150,13 @@ h1{
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 20%;
 }
 
 /* About */
 #about {
   position: relative;
-  margin: 40% 0;
+  margin: 20% 0;
 }
 
 .about-summary {
@@ -163,19 +199,31 @@ h1{
   box-shadow: 1px 1px 10px var(--dark-grey);
   opacity: 80%;
 }
+
 /* Projects */
 #projects {
-  margin: 40% 15%;;
+  margin: 25% 15%;
 }
 
 .project-icon {
   width: 40px;
+  margin: 0 10px;
 }
 
 .project--list__item {
 	display: inline-block;
 	width: 33%;
 }
+h2 {
+  text-align: center;
+}
+
+.project-image {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px;
+} 
 
 p{
   padding-bottom: 30px;
@@ -203,11 +251,10 @@ p{
     border-radius: 20px;
 	}
 
-  .project--list__item-links {
+  .project-links {
+    display: flex;
     position: absolute;
     bottom: 0;
-    width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -229,10 +276,30 @@ p{
 	}
 }
 
+.tool-box {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 50px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+.tool {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 2px;
+  margin: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+
 /* Contact */
 .contact {
   text-align: center;
-  margin: 40% 0;
+  margin: 20% 0;
 }
 
 .contact-form {
@@ -255,123 +322,4 @@ p{
 .social-icon {
   width: 50px;
   margin: 0 20px;
-}
-
-/* Case Studies */
-
-/* Social Eyes App */
-.case-body {
-  margin: 0 10%;
-  font-family: Lato, sans-serif;
-}
-.case-title {
-  font-family: Lato, sans-serif;
-  font-variant: normal;
-}
-@media screen and (min-width: 992px){
-  .intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .intro-content {
-    width: 60%;
-    display: block;
-    margin-right: 20px;
-  }
-  .intro-image {
-    width: 40%;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 20px;
-  }
-  .approach-div {
-    display: flex;
-    flex-direction: row;
-  }
-  .approach-image {
-    width: 50%;
-  }
-  .test-image {
-    width: 100%;
-  }
-  .approach-content {
-    width: 50%;
-    margin-left: 20px;
-    margin-top: -20px;
-    text-align: right;
-  }
-  .challenges {
-    display: flex;
-    flex-direction: row;
-  }
-  .challenges-content {
-    width: 60%;
-    margin-right: 20px;
-  }
-  .challenges-image {
-    width: 40%;
-  }
-  .desktop-image {
-    width: 100%;
-    margin: 20px auto 20px auto;
-  }
-  .login-image {
-    width: 100%;
-  }
-  .credit {
-    text-align: center;
-  }
-}
-.social-eyes-style {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #47BF83;
-  font-style: normal;
-}
-.image {
-  box-shadow: 2px 2px 5px black;
-  border-radius: 5px;
-}
-.title {
-  font-weight: 900;
-}
-.social-eyes-logo {
-  width: 150px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 3px;
-}
-.ipad-v-image {
-  display: block;
-  border-radius: 10px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.test-image {
-  display: block;
-  width: 100%;
-  margin: 0 auto 5px auto;
-}
-.test-pass-image {
-  display: block;
-  width: 100%;
-  margin: 5px auto 0 auto;
-}
-@media screen and (max-width: 991px){
-  .challenges-image {
-    width: 100%;
-    margin: 20px auto 20px auto;
-  }
-  .login-image {
-    width: 100%;
-    margin: 20px auto 20px auto;
-  }
-  .desktop-image {
-    width: 100%;
-    margin: 20px auto 20px auto;
-  }
-  .credit {
-    text-align: center;
-  }
 }

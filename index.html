@@ -7,11 +7,10 @@
     <title>Robert McCotter</title>
     <link rel="icon" type="image/png" href="images/favicon.svg" sizes="32x32" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
-  
+  <!-- === Navbar === -->
     <section class="navbar">
       <div class="navbar-item">
         <a class="navbar-image" type="img" href="#home">
@@ -39,17 +38,19 @@
       </div>
     </section>
   <body class="body">
+<!-- === Home === -->
     <section id="home">
       <div class="top-box"></div>
-      <img src="images/robert.jpg" class="profile-image" alt="robert photo, photo of robert looking to the left">
+      <img src="images/signature.svg" class="signature" alt="Robert McCotter signature">
       <div class="intro-container">
-        <h1>Hello! I am Robert McCotter</h1>
+        <h1>Hello! 
+          <br>I am Robert McCotter</h1>
         <p>I am a Full Stack Web Developer with a background in 
-          <br>Design and Video Production. 
-          <br>I am currently working through a project with Angular. 
+          <br>Design, Animation, and Video Production. 
         </p>
       </div>
     </section>
+<!-- === About === -->
         <section id="about">
           <div class="section-label">
             <img src="images/icoabout.svg" class="section-icon">
@@ -77,108 +78,135 @@
               <a href="files/Robert McCotter Resume.pdf" class="bar-button" target="_blank" download>Download my Resume</a>
           </div>
         </section>
+<!-- === Projects === -->
         <section id="projects">
           <div class="section-label">
             <img src="images/icoprojects.svg" class="section-icon">
             <h1>Projects</h1>
           </div>
           <div class="project--list">
+<!-- === MyFlix === -->
             <div class="project--list__item">
               <h2>MyFlix Web App</h2>
+              <img class="project-image" src="case-studies/myFlix/images/myFlix.png">
+
               <p>
-                For this web application I built a movie database which can be viewed by the user. The user, once registered, can save movies from the database to their list of favorites.   
+                For this web application I built a movie database which can be 
+                viewed by the user. The user, once registered, can save movies 
+                from the database to their list of favorites.   
               </p>
-              <div class="project--list__item-links">
+              <ul class="tool-box">
+                <li class="tool">HTML</li>
+                <li class="tool">CSS</li>
+                <li class="tool">Javascript</li>
+                <li class="tool">MongoDB</li>
+                <li class="tool">REST</li>
+                <li class="tool">Node.js</li>
+              </ul>
+              <div class="project-links">
+                <a href="./case-studies/myFlix/myFlix.html"><img class="project-icon button"src="images/icocasestudy.svg"></a>
                 <a href="https://github.com/McCotter36/myFlix-client" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
                 <a href="https://mccotter-myflix.netlify.app/" target="_blank"><img class="project-icon button" src="images/icoplay.svg"></a>
               </div>
             </div>
-            <div class="project--list__item">
-              <h2>Social Eyes PWA</h2>
-              <p>
-                For this calendar app, I built an interface which accesses Google's Calendar API to list upcoming events. The user can search events by city and adjust the number of events displayed.
-              </p>
-              <div class="project--list__item-links">
-                <a href="./case-studies/social-eyes.html" target="_blank"><img class="project-icon button"src="images/icocasestudy.svg"></a>
-                <a href="https://github.com/McCotter36/social-eyes.git" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
-                <a href="https://mccotter36.github.io/social-eyes" target="_blank"><img class="project-icon button" src="images/icoplay.svg"></a>
-              </div>
+<!-- === Social Eyes === -->
+           <div class="project--list__item">
+            <h2>Social Eyes PWA</h2>
+            <img class="project-image" src="case-studies/social-eyes/images/SEDesktop.png">
+            <p>
+              For this calendar app, I built an interface which accesses Google's Calendar API 
+              to list upcoming events. The user can search events by city and adjust the number 
+              of events displayed.
+            </p>
+            <ul class="tool-box">
+              <li class="tool">HTML</li>
+              <li class="tool">CSS</li>
+              <li class="tool">Javascript</li>
+              <li class="tool">Gherkin</li>
+              <li class="tool">TDD</li>
+              <li class="tool">Serverless</li>
+            </ul>
+            <div class="project-links">
+              <a href="./case-studies/social-eyes/social-eyes.html"><img class="project-icon button"src="images/icocasestudy.svg"></a>
+              <a href="https://github.com/McCotter36/social-eyes.git" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
+              <!-- <a href="https://mccotter36.github.io/social-eyes" target="_blank"><img class="project-icon button" src="images/icoplay.svg"></a> -->
             </div>
+          </div>
+<!-- === MyFlix Angular === -->
+          <div class="project--list__item">
+            <h2>myFlix Angular Front End</h2>
+            <img class="project-image" src="case-studies/myFlixAngular/images/MfAFavorites.png">
+            <p>
+              For this project I rebuilt the front end of the myFlix App using the Angular framework
+            </p>
+            <ul class="tool-box">
+              <li class="tool">Typescript</li>
+              <li class="tool">HTML</li>
+              <li class="tool">SCSS</li>
+              <li class="tool">Javascript</li>
+              <li class="tool">Angular</li>
+            </ul>
+            <div class="project-links">
+              <a href="./case-studies/myFlixAngular/myFlixAngular.html"><img class="project-icon button" src="images/icocasestudy.svg"></a> 
+              <a href="https://github.com/McCotter36/myFlix-Angular-client.git" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
+            </div>  
+          </div>
+<!-- === Speak Easy === -->
             <div class="project--list__item">
               <h2>Speak Easy Native App</h2>
+              <img class="project-image" src="case-studies/speak-easy/images/SEHome.png">
               <p>
                 A messaging app built using React-Native and Expo.
                 The user can log in to the chat room, share text messages, images from their device or camera,
                 As well as share their GPS location. 
               </p>
-              <div class="project--list__item-links">        
-                <a href="/case-studies/speak-easy.html" target="_blank"><img class="project-icon button" src="images/icocasestudy.svg"></a> 
+              <ul class="tool-box">
+                <li class="tool">Javascript</li>
+                <li class="tool">React-Native</li>
+                <li class="tool">Expo</li>
+                <li class="tool">Firebase</li>
+                <li class="tool">Gifted Chat</li>
+              </ul>
+              <div class="project-links">        
+                <a href="./case-studies/speak-easy/speak-easy.html"><img class="project-icon button" src="images/icocasestudy.svg"></a> 
                 <a href="https://github.com/McCotter36/speak-easy-app.git" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
               </div>
             </div>
-            <!-- <div class="project--list__item">
-              <h2>Styleguide</h2>
+<!-- === Pokedex === -->
+          <div class="project--list__item">
+            <h2>Pokedex App</h2>
+            <img class="project-image" src="case-studies/pokedex/images/pokedex.png">
               <p>
-                Again, not yet created but time will tell.
+                This project was aimed and buidling an app that utilized 
+                asyncronous operation via fetch and promises to retrive 
+                data from an external API.            
               </p>
-              <a href="#">See styleguide</a>
-            </div> -->
-            <!-- <div class="project--list__item">
-              <h2>Medium Blog</h2>
-              <p>
-                I wrote a blog once a long time ago.
-                It may be time to start again... this process is very interesting.
-              </p>
-              <a href="#">Read my latest blogpost</a>
-            </div> -->
-            <!-- <div class="project--list__item">
-              <h2>Your Project?</h2>
-              <p>
-                Are you looking for a dedicated developer who is able to work independently or as part of a team?
-                <br>Perhaps a designer with understanding in development principles and web based languages?
-                <br>Maybe you need a bit of both.
-              </p>
-              <a href="contact.html">Contact me</a> -->
+              <ul class="tool-box">
+                <li class="tool">HTML</li>
+                <li class="tool">CSS</li>
+                <li class="tool">Javascript</li>
+                <li class="tool">JQuery</li>
+                <li class="tool">Bootstrap</li>
+                <li class="tool">API</li>
+              </ul>
+            <div class="project-links">
+              <a href="./case-studies/pokedex/pokedex.html"><img class="project-icon button"src="images/icocasestudy.svg"></a>
+              <a href="https://github.com/McCotter36/simple-js-app" target="_blank"><img class="project-icon button" src="images/icogithub.svg"></a>
             </div>
-          </div>
+           </div>
         </section>
+<!-- === Contact === -->
         <section id="contact">
           <div class="contact">
             <div class="section-label">
               <img src="images/icophone.svg" class="section-icon">
               <h1> Contact </h1>
             </div>  
-              <!-- <form action="" method="post" class="contact-form">
-                <input class="contact-input" type ="email" placeholder="Email" id="contact-email" required>
-          
-                <input class="contact-input" placeholder="Phone 000-000-0000" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
-          
-                <textarea class="contact-input" placeholder="Message" maxlength="240" required id="contact-message"></textarea>
-          
-                <input type="submit" class="bar-button" value="Send Message">
-              </form> -->
-          
-                Phone <a href="tel:+19708173753"> +1(970)817-3753</a><br>
-               Email <a href="mailto:robert.mccotter@gmail.com">robert.mccotter@gmail.com</a><br>
-               <!-- <a href="mailto:robert.mccotter@gmail.com">Contact me</a> -->
+              Phone <a href="tel:+19708173753"> +1(970)817-3753</a><br>
+              Email <a href="mailto:robert.mccotter@gmail.com">robert.mccotter@gmail.com</a><br>
         </section>
-    <!-- <img src="images/mccotter_logo.svg" alt="Robert's signature" class="logo page-header_item">
-      <nav class="main-navigation page-header_item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Home</a></li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list_item navigation-list_item--active">About
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a></li>
-        </a></li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work
-          </a></li>
-      </ul>
-    </nav> -->
 
-
+<!-- === Social === -->
 	<footer class="page-footer">
 		<p>Find me on</p>
 		<div class="social-media">

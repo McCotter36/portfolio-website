@@ -1,0 +1,105 @@
+
+/* Return Button */
+.section-label {
+  width: 200px;
+  height: 44px;
+  margin: 10px auto;
+  background: var(--primary-color);
+  border: solid;
+  border-width: 3px;
+  border-color: black;
+  background: #FF8C00;
+  border-radius: 25px;
+  line-height: 2px;
+}
+
+.section-label:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+  transition: .2s;
+}
+
+.section-icon {
+  width: 50px;
+  margin: -3px;
+  float: left;
+  text-align: center;
+}
+
+.project-icon {
+  width: 40px;
+  margin: 0 10px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.home-link { 
+  text-decoration: none;
+  color: black;
+}
+
+/* body */
+.case-body {
+  margin: 0 10%;
+  font-family: Lato, sans-serif;
+}
+.case-title {
+  font-family: Lato, sans-serif;
+  font-variant: normal;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.pokedex-code {
+  width: 40%;
+  float: right;
+  margin:  0 20px 0 20px;
+}
+
+.overview-title {
+  margin-top: 20px;
+}
+
+.approach-div {
+  clear: right;
+}
+
+.hover {
+  float: left;
+  margin: 0 20px 20px 0px;
+}
+
+.challenges {
+  clear: left;
+}
+
+.modal-image {
+  width: 40%;
+  float: right;
+  margin: 10px;
+}
+
+.function-image {
+  width: 40%;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.credit {
+  margin-top: 20px;
+  clear: both;
+  text-align: center;
+}
+
+.image {
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px;
+}
