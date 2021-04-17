@@ -9,6 +9,15 @@
   --green-accent: #9de0ad;
   --font-heading-weight: 700;
 }
+/* Map */
+.map {
+  z-index: -1;
+  fill: var(--primary-color);
+  position: fixed;
+  margin-left: 10%;
+  margin-top: 20%;
+  max-height: 100%;
+}
 
 /* Navbar */
 .navbar{
@@ -58,6 +67,7 @@
   border-color: black;
   border-radius: 25px;
   line-height: 2px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .section-icon {
@@ -102,39 +112,35 @@ h1{
 }
 
 /* Signature Block */
+
+.top-box {
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  transform: skewY(-5deg);
+  box-shadow: 5px 5px 10px black;
+}
+
 @media all and (max-width: 500px){
   .top-box {
-    background-color: var(--primary-color);
-    position: relative;
-    z-index: -1;
     margin-top: -10%;
     height: 150px;
     width: 100%;
-    transform: skewY(-5deg);
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 1000px){
   .top-box {
-    background-color: var(--primary-color);
-    position: relative;
-    z-index: -1;
     margin-top: -5%;
     height: 250px;
-    width: 100%;
-    transform: skewY(-5deg);
   }
 }
 
 @media all and (min-width: 1000px){
   .top-box {
-    background-color: var(--primary-color);
-    position: relative;
-    z-index: -1;
     margin-top: -5%;
     height: 475px;
-    width: 100%;
-    transform: skewY(-5deg);
   }
 }
 
@@ -146,12 +152,18 @@ h1{
 }
 
 .intro-container {
-  position: relative;
   text-align: center;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  margin-top: 25%;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 10px  black;
+  padding: 20px;
 }
 
 /* About */
@@ -162,11 +174,15 @@ h1{
 
 .about-summary {
   position: relative;
+  background-color: white;
+  border-radius: 50px;
   margin: 0 20%;
+  padding: 40px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .bar-button {
-  font-size: 12pt;
+  font-size: 14pt;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -176,8 +192,9 @@ h1{
   border-color: var(--dark-grey);
   background-color: var(--primary-color);
   border-width: 2px;
-  color: white;
+  color: black;
   border-radius: 40px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .bar-button:hover {
@@ -250,6 +267,7 @@ p{
     border-color: black;
     border-width: 2px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
 	}
 
   .project-links {
