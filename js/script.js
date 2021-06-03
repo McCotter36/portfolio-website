@@ -154,20 +154,10 @@ function changeLanguageAndHighlightCountry(array) {
     var countryId = randomizedArray[1];
     // console.log(languageIndex, countryId)
     document.getElementById(countryId).setAttribute("style", "fill: black" )
-    // document.getElementById(countryId).style.fill = "blue";
-    // document.getElementById(countryId).style.opacity = "50%";
       setTimeout (function() {
         document.getElementById(countryId).setAttribute("style", "fill: #FF8C00")
-        // document.getElementById(countryId).style.fill = "black";
-        // document.getElementById(countryId).style.opacity = "100%";
-
     }, 4500);
 };
-
-// window.addEventListener('load', function() {
-//   changeLanguageAndHighlightCountry(nonEnglish);
-// })
-
 
 // === alternate english and random nonEnglish ===
 
@@ -182,7 +172,8 @@ function cycleLanguages(array1, array2, timer) {
   }, timer * 2);
 }
 
-//wait for page to load to run
+//wait for page to load then run
+
 window.addEventListener('load', function(){
 cycleLanguages(english, nonEnglish, 5000);
 });
